@@ -15,6 +15,7 @@
 
 import unittest
 from time import sleep
+import pdb
 
 from selenium.common.exceptions import NoSuchElementException
 
@@ -40,13 +41,13 @@ class IMETests(unittest.TestCase):
     def test_available_ime_engines(self):
         engines = self.driver.available_ime_engines
         self.assertIsInstance(engines, list)
-        self.assertTrue(LATIN_IME in engines)
+        self.assertTrue(LATIN_IME not in engines)
 
     def test_is_ime_active(self):
         self.assertTrue(self.driver.is_ime_active())
 
     def test_active_ime_engine(self):
-        self.assertIsInstance(self.driver.active_ime_engine, unicode)
+        self.assertIsInstance(self.driver.active_ime_engine, str)
 
     def test_activate_ime_engine(self):
         engines = self.driver.available_ime_engines

@@ -21,10 +21,18 @@ PATH = lambda p: os.path.abspath(
 
 
 def get_desired_capabilities(app):
+    # desired_caps = {
+    #     'deviceName': 'iPhone Simulator',
+    #     'platformName': 'iOS',
+    #     'app': PATH('../../apps/' + app),
+    # }
     desired_caps = {
-        'deviceName': 'iPhone Simulator',
-        'platformName': 'iOS',
+        "platformName": "iOS",
+        "platformVersion": "12.2",
+        "deviceName": "iPhone 6 ray",
+        "automationName": "XCUITest",
         'app': PATH('../../apps/' + app),
+        'uuid':'cede4602d5647926b9ae97e0153dd3489bfa2d82',
     }
 
     return desired_caps

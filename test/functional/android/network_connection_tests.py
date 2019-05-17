@@ -19,11 +19,26 @@ import unittest
 from appium import webdriver
 from appium.webdriver.connectiontype import ConnectionType
 import desired_capabilities
+import pdb
 
 
 # the emulator is sometimes slow and needs time to think
 SLEEPY_TIME = 1
 
+import warnings
+
+def fxn():
+    warnings.warn("deprecated", DeprecationWarning)
+
+with warnings.catch_warnings(record=True) as w:
+    # Cause all warnings to always be triggered.
+    warnings.simplefilter("always")
+    # Trigger a warning.
+    fxn()
+    # Verify some things
+    assert len(w) == 1
+    assert issubclass(w[-1].category, DeprecationWarning)
+    assert "deprecated" in str(w[-1].message)
 
 class NetworkConnectionTests(unittest.TestCase):
     def setUp(self):
@@ -39,9 +54,9 @@ class NetworkConnectionTests(unittest.TestCase):
         self.assertIsInstance(nc, int)
 
     def test_set_network_connection(self):
-        nc = self.driver.set_network_connection(ConnectionType.DATA_ONLY)
+        nc = self.driver.set_network_connection(ConnectionType.ALL_NETWORK_ON)
         self.assertIsInstance(nc, int)
-        self.assertEqual(nc, ConnectionType.DATA_ONLY.value)
+        self.assertEqual(nc, ConnectionType.ALL_NETWORK_ON.value)
 
 
 if __name__ == "__main__":

@@ -16,7 +16,10 @@ import unittest
 
 from appium import webdriver
 import desired_capabilities
+from time import sleep
+import pdb
 
+SLEEPY_TIME=1
 
 class FindByAccessibilityIDTests(unittest.TestCase):
     def setUp(self):
@@ -35,12 +38,14 @@ class FindByAccessibilityIDTests(unittest.TestCase):
         self.assertIsInstance(els, list)
 
     def test_element_find_single_element(self):
+        sleep(SLEEPY_TIME)
         el = self.driver.find_element_by_class_name('android.widget.ListView')
 
         sub_el = el.find_element_by_accessibility_id('Animation')
         self.assertIsNotNone(sub_el)
 
     def test_element_find_multiple_elements(self):
+        sleep(SLEEPY_TIME)
         el = self.driver.find_element_by_class_name('android.widget.ListView')
 
         sub_els = el.find_elements_by_accessibility_id('Animation')

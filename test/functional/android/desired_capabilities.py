@@ -21,12 +21,27 @@ PATH = lambda p: os.path.abspath(
 
 
 def get_desired_capabilities(app):
+    #emulator setting
+    # desired_caps = {
+    #     'platformName': 'Android',
+    #     'platformVersion': '5.1',
+    #     'deviceName': '192.168.56.102:5555',
+    #     'app': PATH('../../apps/' + app),
+    #     'newCommandTimeout': 240
+    # }
     desired_caps = {
         'platformName': 'Android',
-        'platformVersion': '4.2',
-        'deviceName': 'Android Emulator',
+        'platformVersion': '4.4.2',
+        'deviceName': '127.0.0.1:62001',
         'app': PATH('../../apps/' + app),
         'newCommandTimeout': 240
     }
 
+    # desired_caps = {
+    #     'platformName': 'Android',
+    #     'platformVersion': '8.1',
+    #     'deviceName': 'emulator-5554',
+    #     'app': PATH('../../apps/' + app),
+    #     'newCommandTimeout': 240
+    # }
     return desired_caps

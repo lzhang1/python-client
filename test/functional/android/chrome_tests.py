@@ -13,20 +13,23 @@
 # limitations under the License.
 
 import unittest
+import os
 
 from time import sleep
 
 from appium import webdriver
-import desired_capabilities
-
+PATH = lambda p: os.path.abspath(
+    os.path.join(os.path.dirname(__file__), p)
+)
 
 class ChromeTests(unittest.TestCase):
     def setUp(self):
         desired_caps = {
             'platformName': 'Android',
-            'platformVersion': '4.2',
-            'deviceName': 'Android Emulator',
-            'browserName': 'Chrome'
+            'platformVersion': '8.1',
+            'deviceName': 'emulator-5554',
+            # 'browserName': 'Firefox'
+            'app': PATH('../../apps/' + 'Firefox.apk')
         }
         self.driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
 
@@ -34,7 +37,8 @@ class ChromeTests(unittest.TestCase):
         self.driver.quit()
 
     def test_find_single_element(self):
-        self.driver.get('http://10.0.2.2:4723/test/guinea-pig')
+        #self.driver.get('http://10.0.2.2:4723/test/guinea-pig')
+        self.driver.get('http://www.baidu.com/')
         self.driver.find_element_by_link_text('i am a link').click()
 
         self.assertTrue('I am some other page content' in self.driver.page_source)
