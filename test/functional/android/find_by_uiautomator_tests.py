@@ -13,7 +13,7 @@
 # limitations under the License.
 
 import unittest
-
+import HtmlTestRunner
 from appium import webdriver
 import desired_capabilities
 
@@ -53,4 +53,5 @@ class FindByUIAutomatorTests(unittest.TestCase):
 
 if __name__ == "__main__":
     suite = unittest.TestLoader().loadTestsFromTestCase(FindByUIAutomatorTests)
-    unittest.TextTestRunner(verbosity=2).run(suite)
+    testRunner=HtmlTestRunner.HTMLTestRunner(output='result',report_title='测试报告')
+    testRunner.run(suite)

@@ -13,6 +13,7 @@
 # limitations under the License.
 
 import unittest
+import HtmlTestRunner
 from time import sleep
 
 from selenium.common.exceptions import NoSuchElementException
@@ -245,4 +246,5 @@ class TouchActionTests(unittest.TestCase):
 
 if __name__ == "__main__":
     suite = unittest.TestLoader().loadTestsFromTestCase(TouchActionTests)
-    unittest.TextTestRunner(verbosity=2).run(suite)
+    testRunner=HtmlTestRunner.HTMLTestRunner(output='result',report_title='测试报告')
+    testRunner.run(suite)

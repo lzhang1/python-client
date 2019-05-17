@@ -13,6 +13,7 @@
 # limitations under the License.
 
 import unittest
+import HtmlTestRunner
 from time import sleep
 
 from appium import webdriver
@@ -173,4 +174,5 @@ class MultiActionTests(unittest.TestCase):
 
 if __name__ == "__main__":
     suite = unittest.TestLoader().loadTestsFromTestCase(MultiActionTests)
-    unittest.TextTestRunner(verbosity=2,warnings=None).run(suite)
+    testRunner=HtmlTestRunner.HTMLTestRunner(output='result',report_title='测试报告')
+    testRunner.run(suite)

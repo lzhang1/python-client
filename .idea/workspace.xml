@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2a94ed3-7d2b-4490-b3f3-ef49d36adf2a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/functional/android/chrome_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/functional/android/chrome_tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/functional/android/desired_capabilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/functional/android/desired_capabilities.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/functional/android/find_by_accessibility_id_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/functional/android/find_by_accessibility_id_tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/functional/android/ime_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/functional/android/ime_tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/functional/android/multi_action_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/functional/android/multi_action_tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/functional/android/network_connection_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/functional/android/network_connection_tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/functional/android/selendroid_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/functional/android/selendroid_tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/functional/android/touch_action_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/functional/android/touch_action_tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/functional/ios/desired_capabilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/functional/ios/desired_capabilities.py" afterDir="false" />
-    </list>
+    <list default="true" id="c2a94ed3-7d2b-4490-b3f3-ef49d36adf2a" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +102,7 @@
       <file leaf-file-name="connect_tests.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/functional/android/connect_tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
+            <state relative-caret-position="28">
               <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
             </state>
           </provider>
@@ -450,12 +438,12 @@
     <frame x="100" y="23" width="1271" height="877" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49959317" weight="0.32948717" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50528884" side_tool="true" visible="true" weight="0.41538462" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.33930025" side_tool="true" visible="true" weight="0.525641" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49959317" weight="0.32948717" />
       <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.49959317" weight="0.32948717" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.65256304" weight="0.57051283" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49471116" visible="true" weight="0.41538462" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.6606998" visible="true" weight="0.525641" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3401139" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -732,7 +720,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/functional/android/connect_tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
+        <state relative-caret-position="28">
           <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
         </state>
       </provider>

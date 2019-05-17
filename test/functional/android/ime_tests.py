@@ -14,6 +14,7 @@
 # limitations under the License.
 
 import unittest
+import HtmlTestRunner
 from time import sleep
 import pdb
 
@@ -69,4 +70,5 @@ class IMETests(unittest.TestCase):
 
 if __name__ == "__main__":
     suite = unittest.TestLoader().loadTestsFromTestCase(IMETests)
-    unittest.TextTestRunner(verbosity=2).run(suite)
+    testRunner=HtmlTestRunner.HTMLTestRunner(output='result',report_title='测试报告')
+    testRunner.run(suite)

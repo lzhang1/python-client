@@ -14,6 +14,7 @@
 # limitations under the License.
 
 import unittest
+import HtmlTestRunner
 from zipfile import ZipFile
 import json
 import os
@@ -77,4 +78,5 @@ class AppiumTests(unittest.TestCase):
 
 if __name__ == "__main__":
     suite = unittest.TestLoader().loadTestsFromTestCase(AppiumTests)
-    unittest.TextTestRunner(verbosity=2).run(suite)
+    testRunner=HtmlTestRunner.HTMLTestRunner(output='result',report_title='测试报告')
+    testRunner.run(suite)

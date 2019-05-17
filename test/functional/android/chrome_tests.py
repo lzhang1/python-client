@@ -13,6 +13,7 @@
 # limitations under the License.
 
 import unittest
+import HtmlTestRunner
 import os
 
 from time import sleep
