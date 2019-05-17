@@ -101,7 +101,7 @@ class AppiumTests(unittest.TestCase):
     def test_background_app(self):
         self.driver.background_app(1)
         sleep(5)
-        el = self.driver.('Animation')
+        el = self.driver.find_elements_by_accessibility_id('Animation')
         self.assertIsNotNone(el)
 
     def test_is_app_installed(self):
