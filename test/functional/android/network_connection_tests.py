@@ -53,6 +53,7 @@ class NetworkConnectionTests(unittest.TestCase):
         nc = self.driver.network_connection
         self.assertIsInstance(nc, int)
 
+    @unittest.skip('done')
     def test_set_network_connection(self):
         nc = self.driver.set_network_connection(ConnectionType.ALL_NETWORK_ON)
         self.assertIsInstance(nc, int)
